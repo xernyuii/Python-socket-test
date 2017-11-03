@@ -1,47 +1,14 @@
-[
-    {
-        "Name": "bridge",
-        "Id": "70b3edee201a61da0667f1cdce8e6d5b7532714ad986e33f0a92635891755b48",
-        "Created": "2017-10-20T09:46:29.251028386Z",
-        "Scope": "local",
-        "Driver": "bridge",
-        "EnableIPv6": false,
-        "IPAM": {
-            "Driver": "default",
-            "Options": null,
-            "Config": [
-                {
-                    "Subnet": "172.17.0.0/16",
-                    "Gateway": "172.17.0.1"
-                }
-            ]
-        },
-        "Internal": false,
-        "Attachable": false,
-        "Containers": {
-            "6526836965e3d607ea88c0d075d4ae376f7bc4742e17fe7b055691130bd24933": {
-                "Name": "ubuntu-upstart",
-                "EndpointID": "2ccaaba30350486811028771b2b14526d26c2c6468fb6b767765674231271260",
-                "MacAddress": "02:42:ac:11:00:03",
-                "IPv4Address": "172.17.0.3/16",
-                "IPv6Address": ""
-            },
-            "7c58163e6353871d4c1e9bb5f7e6de6e71a43d4ee0deba7a25f89041f442936f": {
-                "Name": "condescending_stallman",
-                "EndpointID": "0cd9358d9b2daa49b3ce7529d6c2348ed94a50746b08f936d8229efda953b58d",
-                "MacAddress": "02:42:ac:11:00:02",
-                "IPv4Address": "172.17.0.2/16",
-                "IPv6Address": ""
-            }
-        },
-        "Options": {
-            "com.docker.network.bridge.default_bridge": "true",
-            "com.docker.network.bridge.enable_icc": "true",
-            "com.docker.network.bridge.enable_ip_masquerade": "true",
-            "com.docker.network.bridge.host_binding_ipv4": "0.0.0.0",
-            "com.docker.network.bridge.name": "docker0",
-            "com.docker.network.driver.mtu": "1500"
-        },
-        "Labels": {}
+"Containers": {
+    "6526836965e3d607ea88c0d075d4ae376f7bc4742e17fe7b055691130bd24933": {
+        "Name": "client",
+        "MacAddress": "02:42:ac:11:00:03",
+        "IPv4Address": "172.17.0.3/16",
+        "IPv6Address": ""
+    },
+    "7c58163e6353871d4c1e9bb5f7e6de6e71a43d4ee0deba7a25f89041f442936f": {
+        "Name": "server",
+        "MacAddress": "02:42:ac:11:00:02",
+        "IPv4Address": "172.17.0.2/16",
+        "IPv6Address": ""
     }
-]
+},
