@@ -1,5 +1,4 @@
 # Python-socket-test
-Based on 2 docker containers
 Send messages between two docker containers by Python.socket
 ## code preview
 ### server on 127.0.17.2
